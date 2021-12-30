@@ -34,6 +34,7 @@ function verificar(){
 
             if(idade >=0 && idade < 10){
                 img.setAttribute('src', 'imagens/menina.png')
+                document.body.style.backgroundColor = 'pink'
             }else if (idade < 21){
                 img.setAttribute('src', 'imagens/mulherjovem.png')
             }
@@ -44,6 +45,14 @@ function verificar(){
                 img.setAttribute('src', 'imagens/idosa.png')
             }
         }
+
+        if(genero = 'Mulher' && fsex[1].checked)
+        {
+            document.body.style.backgroundColor = 'pink'
+        }else{
+            document.body.style.backgroundColor = 'rgb(55, 55, 167)'
+        }
+
         res.style.textAlign = 'center'
         res.style.color = 'red'
         res.innerHTML = `Detectamos: ${genero} com ${idade} anos`
