@@ -46,7 +46,7 @@ function verificar(){
             }
         }
 
-        if(genero = 'Mulher' && fsex[1].checked)
+        if(genero === 'Mulher' && fsex[1].checked)
         {
             document.body.style.backgroundColor = 'pink'
         }else{
